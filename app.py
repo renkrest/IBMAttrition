@@ -84,8 +84,8 @@ else:
    # Inference
     data = {
            'Age': Age,
-           'Business Travel': BusinessTravel,
-           'Distance From Home': DistanceFromHome,
+           'BusinessTravel': BusinessTravel,
+           'DistanceFromHome': DistanceFromHome,
            'Education': Education,
            'Satisfaction': JobSatisfaction,
            'Involvement': JobInvolvement,
