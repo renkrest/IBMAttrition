@@ -43,33 +43,33 @@ else:
     with col1:
         Age = st.number_input('Age', value=25)
     with col2:
-        BusinessTravel = st.selectbox('Business Travel', ['1', '2', '3'])     
+        BusinessTravel = st.selectbox('Business Travel', [1, 2, 3])     
    # Baris Kedua
     with st.container():
         col1, col2 = st.columns(2)
     with col1:
         DistanceFromHome = st.number_input('Distance From Home', value=5)
     with col2:
-        Education = st.selectbox('Education', ['1', '2', '3','4','5'])
+        Education = st.selectbox('Education', [1, 2, 3,4,5])
 
    # Baris Ketiga
     with st.container():
        col1, col2, col3 = st.columns(3)
     with col1:
-       JobSatisfaction = st.selectbox('Satisfaction', ['1', '2', '3','4'])
+       JobSatisfaction = st.selectbox('Satisfaction', [1, 2, 3,4])
     with col2:
-       JobInvolvement = st.selectbox('Involvement', ['1', '2', '3','4'])        
+       JobInvolvement = st.selectbox('Involvement', [1, 2, 3,4])        
     with col3:
-       JobLevel = st.selectbox('Level',['1', '2', '3','4','5'])        
+       JobLevel = st.selectbox('Level',[1, 2, 3,4,5])        
    # Baris Keempat
     with st.container():
         col1, col2, col3 = st.columns(3)
     with col1:
-        MaritalStatus = st.selectbox('Marital Status',['Single', 'Married', 'Divorced'])    
+        MaritalStatus = st.selectbox('Marital Status',[1, 2, 3])    
     with col2:
         MonthlyIncome = st.number_input('Monthly Income', value=10000.0)
     with col3:
-        EducationField = st.selectbox('Education Field',['Human Resources', 'Life Sciences', 'Marketing','Medical', 'Other', 'Technical Degree'])
+        EducationField = st.selectbox('Education Field',[1,2,3,4,5,6])
        
    # Baris Kelima
     with st.container():
@@ -79,7 +79,7 @@ else:
     with col2:
         YearsAtCompany = st.number_input('Years At Company', value=5) 
     with col3:
-        OverTime = st.selectbox('Over Time',['Yes', 'No'])
+        OverTime = st.selectbox('Over Time',[1, 0])
 
    # Inference
     data = {
