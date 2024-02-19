@@ -95,7 +95,7 @@ else:
            'Education Field': EducationField,
            'Total Working Years': TotalWorkingYears,
            'Years At Company': YearsAtCompany,
-           'Over Time': OverTime,
+           'Over Time': OverTime
            }
 
    # Tabel data
