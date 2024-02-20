@@ -65,7 +65,7 @@ else:
     with st.container():
         col1, col2, col3 = st.columns(3)
     with col1:
-        MaritalStatus = st.selectbox('Marital Status',[1, 2, 3])    
+        MaritalStatus = st.selectbox('Marital Status',['Divorced', 'Married', 'Singles'])    
     with col2:
         MonthlyIncome = st.number_input('Monthly Income', value=10000.0)
     with col3:
