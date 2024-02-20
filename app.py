@@ -43,14 +43,14 @@ else:
     with col1:
         Age = st.number_input('Age', value=25)
     with col2:
-        BusinessTravel = st.selectbox('Business Travel', [1, 2, 3])     
+        BusinessTravel = st.selectbox('Business Travel', ['Non_Travel', 'Travel_Rarely', 'Travel_Frequently'])     
    # Baris Kedua
     with st.container():
         col1, col2 = st.columns(2)
     with col1:
         DistanceFromHome = st.number_input('Distance From Home', value=5)
     with col2:
-        Education = st.selectbox('Education', [1, 2, 3,4,5])
+        Education = st.selectbox('Education', ['Life Sciences', 'Medical', 'Human Resources', 'Marketing','Other', 'Technical Degree'])
 
    # Baris Ketiga
     with st.container():
