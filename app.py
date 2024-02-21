@@ -32,7 +32,7 @@ if pilihan == 'Prediksi dari file csv':
             if hasil[i] == 1:
                 st.write('Attrition',dataku['Attrition'][i],'= diprediksi akan KELUAR PERUSAHAAN')
             else:
-                st.write('Attrition',dataku['Attrition'][i],'= diprediksi akan KELUAR PERUSAHAAN')
+                st.write('Attrition',dataku['Attrition'][i],'= diprediksi akan STAY DI PERUSAHAAN')
     else:
         st.error('File yang diupload kosong, silakan pilih file yang valid')
         #st.markdown('File yang diupload kosong, silakan pilih file yang valid')
