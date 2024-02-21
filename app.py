@@ -139,7 +139,7 @@ else:
     with col4:
         Over18 = st.selectbox('Over18',['Y'])
     with col5:
-        TrainingTimesLastYear = st.selectbox('TrainingTimesLastYear',[0, 1, 2, 3])
+        TrainingTimesLastYr = st.selectbox('TrainingTimesLastYear',[0, 1, 2, 3])
    
     # Inference
     data = {
