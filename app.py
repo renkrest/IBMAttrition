@@ -117,30 +117,35 @@ else:
 
     # Baris Kesembilan
     with st.container():
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3 = st.columns(3)
     with col1:
-        WorkLifeBalance = st.selectbox('WorkLifeBalance',[1, 2, 3, 4])
-    with col2:
         YearsInCurrentRole = st.number_input('YearsInCurrentRole', value=5) 
-    with col3:
+    with col2:
         YearsSinceLastPromotion = st.number_input('YearsSinceLastPromotion', value=5)
-    with col4:
+    with col3:
         YearsWithCurrManager = st.number_input('YearsWithCurrManager', value=3)
 
     # Baris Kesepuluh
     with st.container():
-        col1, col2, col3, col4, col5 = st.columns(5)
+        col1, col2, col3 = st.columns(3)
     with col1:
         Department = st.selectbox('Department',['Human Resources', 'Sales','Research & Development'])
     with col2:
         Gender = st.selectbox('Gender',['Female', 'Male']) 
     with col3:
         JobRole = st.selectbox('JobRole',['Healthcare Representative', 'Human Resources', 'Laboratory Technician', 'Manager', 'Manufacturing Director', 'Research Director', 'Research Scientist', 'Sales Executive', 'Sales Respresentative'])
-    with col4:
+    
+
+# Baris Kesebelas
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+    with col1:
+        WorkLifeBalance = st.selectbox('WorkLifeBalance',[1, 2, 3, 4])
+    with col2:
         Over18 = st.selectbox('Over18',['Y'])
-    with col5:
-        TrainingTimesLastYr = st.selectbox('TrainingTimesLastYr',[0, 1, 2, 3])
-   
+    with col3:
+        TrainingTimesLastYear = st.selectbox('TrainingTimesLastYear',[0, 1, 2, 3])
+    
     # Inference
     data = {
            'Age': Age,
@@ -167,7 +172,7 @@ else:
            'RelationshipSatisfaction': RelationshipSatisfaction, 
            'StandardHours': StandardHours,
            'StockOptionLevel': StockOptionLevel,
-           'TrainingTimesLastYr': TrainingTimesLastYr,
+           'TrainingTimesLastYear': TrainingTimesLastYear,
            'WorkLifeBalance': WorkLifeBalance,
            'YearsWithCurrManager': YearsWithCurrManager,
            'YearsInCurrentRole': YearsInCurrentRole, 
