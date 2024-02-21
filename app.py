@@ -96,7 +96,6 @@ else:
            'TotalWorkingYears': TotalWorkingYears,
            'YearsAtCompany': YearsAtCompany,
            'OverTime': OverTime,
-           'DailyRate': DailyRate,
            'EmployeeCount': EmployeeCount,
            'EnvironmentSatisfaction': EnvironmentSatisfaction,
            'HourlyRate': HourlyRate,
