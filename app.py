@@ -160,7 +160,10 @@ else:
            'WorkLifeBalance': WorkLifeBalance,
            'YearsInCurrentRole': YearsInCurrentRole, 
            'YearsSinceLastPromotion': YearsSinceLastPromotion,
-           'YearsWithCurrManager': YearsWithCurrManager
+           'Department': Department,
+           'Gender': Gender,
+           'JobRole': JobRole,
+           'Over18': Over18
            }
 
    # Tabel data
