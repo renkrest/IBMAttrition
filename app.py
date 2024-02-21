@@ -81,6 +81,55 @@ else:
     with col3:
         OverTime = st.selectbox('OverTime',[1, 0])
 
+    # Baris Keenam
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+    with col1:
+        DailyRate = st.number_input('DailyRate', value=500)
+    with col2:
+        EmployeeCount = st.number_input('EmployeeCount', value=1) 
+    with col3:
+        EnvironmentSatisfaction = st.selectbox('EnvironmentSatisfaction',[1, 2, 3, 4])
+
+    # Baris Ketujuh
+    with st.container():
+        col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        HourlyRate = st.number_input('HourlyRate', value=50)
+    with col2:
+        MonthlyRate = st.number_input('MonthlyRate', value=5000) 
+    with col3:
+        NumCompaniesWorked = st.selectbox('NumCompaniesWorked',[0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+    with col4:
+        PercentSalaryHike = st.number_input('PercentSalaryHike', value=20)
+
+    # Baris Kedelapan
+    with st.container():
+        col1, col2, col3, col4, col5 = st.columns(5)
+    with col1:
+        PerformanceRating = st.selectbox('PerformanceRating',[3, 4])
+    with col2:
+        RelationshipSatisfaction = st.selectbox('RelationshipSatisfaction',[1, 2, 3, 4]) 
+    with col3:
+        StandardHours = st.selectbox('StandardHours',[80])
+    with col4:
+        StockOptionLevel = st.selectbox('StockOptionLevel',[0, 1, 2, 3])
+    with col5:
+        TrainingTimesLastYear = st.selectbox('TrainingTimesLastYear',[0, 1, 2, 3])
+
+
+    # Baris Ketujuh
+    with st.container():
+        col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        WorkLifeBalance = st.selectbox('WorkLifeBalance',[1, 2, 3, 4])
+    with col2:
+        YearsInCurrentRole = st.number_input('YearsInCurrentRole', value=5) 
+    with col3:
+        YearsSinceLastPromotion = st.number_input('YearsSinceLastPromotion', value=5)
+    with col4:
+        YearsWithCurrManager = st.number_input('YearsWithCurrManager', value=3)
+
    # Inference
     data = {
            'Age': Age,
