@@ -105,7 +105,7 @@ else:
 
     # Baris Kedelapan
     with st.container():
-        col1, col2, col3, col4, col5 = st.columns(5)
+        col1, col2, col3, col4 = st.columns(4)
     with col1:
         PerformanceRating = st.selectbox('PerformanceRating',[3, 4])
     with col2:
@@ -114,9 +114,6 @@ else:
         StandardHours = st.selectbox('StandardHours',[80])
     with col4:
         StockOptionLevel = st.selectbox('StockOptionLevel',[0, 1, 2, 3])
-    with col5:
-        TrainingTimesLastYear = st.selectbox('TrainingTimesLastYear',[0, 1, 2, 3])
-
 
     # Baris Kesembilan
     with st.container():
@@ -132,7 +129,7 @@ else:
 
     # Baris Kesepuluh
     with st.container():
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
         Department = st.selectbox('Department',['Human Resources', 'Sales','Research & Development'])
     with col2:
@@ -141,8 +138,10 @@ else:
         JobRole = st.selectbox('JobRole',['Healthcare Representative', 'Human Resources', 'Laboratory Technician', 'Manager', 'Manufacturing Director', 'Research Director', 'Research Scientist', 'Sales Executive', 'Sales Respresentative'])
     with col4:
         Over18 = st.selectbox('Over18',['Y'])
-
-   # Inference
+    with col5:
+        TrainingTimesLastYear = st.selectbox('TrainingTimesLastYear',[0, 1, 2, 3])
+   
+    # Inference
     data = {
            'Age': Age,
            'BusinessTravel': BusinessTravel,
