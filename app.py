@@ -170,6 +170,7 @@ else:
            'StockOptionLevel': StockOptionLevel,
            'TrainingTimesLastYear': TrainingTimesLastYear,
            'WorkLifeBalance': WorkLifeBalance,
+           'YearsWithCurrManager': YearsWithCurrManager,
            'YearsInCurrentRole': YearsInCurrentRole, 
            'YearsSinceLastPromotion': YearsSinceLastPromotion,
            'Department': Department,
