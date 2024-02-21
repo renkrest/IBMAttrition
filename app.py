@@ -167,7 +167,7 @@ else:
            'RelationshipSatisfaction': RelationshipSatisfaction, 
            'StandardHours': StandardHours,
            'StockOptionLevel': StockOptionLevel,
-           'TrainingTimesLastYear': TrainingTimesLastYear,
+           'TrainingTimesLastYear': TrainingTimesLastYr,
            'WorkLifeBalance': WorkLifeBalance,
            'YearsWithCurrManager': YearsWithCurrManager,
            'YearsInCurrentRole': YearsInCurrentRole, 
