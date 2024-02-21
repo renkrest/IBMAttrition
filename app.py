@@ -138,7 +138,7 @@ else:
     with col2:
         Gender = st.selectbox('Gender',['Female', 'Male']) 
     with col3:
-        JobRole = st.selectbox('JobRole',['Healthcare Representative', 'Human Resources', 'Laboratory Technician', 'Manager'], '')
+        JobRole = st.selectbox('JobRole',['Healthcare Representative', 'Human Resources', 'Laboratory Technician', 'Manager', 'Manufacturing Director', 'Research Director', 'Research Scientist', 'Sales Executive', 'Sales Respresentative'])
     with col4:
         Over18 = st.selectbox('Over18',['Y'])
 
