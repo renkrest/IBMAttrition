@@ -118,7 +118,7 @@ else:
         TrainingTimesLastYear = st.selectbox('TrainingTimesLastYear',[0, 1, 2, 3])
 
 
-    # Baris Ketujuh
+    # Baris Kesembilan
     with st.container():
         col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -129,6 +129,18 @@ else:
         YearsSinceLastPromotion = st.number_input('YearsSinceLastPromotion', value=5)
     with col4:
         YearsWithCurrManager = st.number_input('YearsWithCurrManager', value=3)
+
+    # Baris Kesepuluh
+    with st.container():
+        col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        Department = st.selectbox('Department',['Human Resources', 'Sales','Research & Development'])
+    with col2:
+        Gender = st.selectbox('Gender',['Female', 'Male']) 
+    with col3:
+        JobRole = st.selectbox('JobRole',['Healthcare Representative', 'Human Resources', 'Laboratory Technician', 'Manager'], '')
+    with col4:
+        Over18 = st.selectbox('Over18',['Y'])
 
    # Inference
     data = {
