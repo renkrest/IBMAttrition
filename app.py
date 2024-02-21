@@ -78,7 +78,8 @@ else:
         TotalWorkingYears = st.number_input('Total Working Years', value=5)
     with col2:
         YearsAtCompany = st.number_input('Years At Company', value=5) 
-    
+    with col3:
+        OverTime = st.selectbox('Over Time',[1, 0])
 
    # Inference
     data = {
