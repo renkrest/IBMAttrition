@@ -43,7 +43,9 @@ else:
     with col1:
         Age = st.number_input('Age', value=25)
     with col2:
-        BusinessTravel = st.selectbox('Business Travel', ['Non_Travel', 'Travel_Rarely', 'Travel_Frequently'])     
+        BusinessTravel = st.selectbox('Business Travel', ['Non Travel', 'Travel_Rarely', 'Travel_Frequently'])   
+        if BusinessTravel == 'Non Travel': 
+            BusinessTravel = 'Non_Travel'
    # Baris Kedua
     with st.container():
         col1, col2 = st.columns(2)
